@@ -6,6 +6,8 @@ Official Website: https://jr.weatherstar.dev
 ### Visit the Discord Server
 Visit the Disocrd: https://mistwx.com/discord
 
+You can change location settings in the location.js file under the locationSettings variable
+
 The license does not prohibit this, but I do not recommend making your own website around this simulator. It is not nice.
 
 Code mostly made by me, rest of the code used in other open source projects.
