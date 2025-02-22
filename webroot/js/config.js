@@ -8,7 +8,7 @@ var apperanceSettings = {
   marqueeAd:  ["If you are interested in TWC, EAS, or anything weather/tech related, join Mist Weather Media! https://mistwx.com/discord"],
   onlyLDLMode: false,
   startupTime: 5000,//set to 0 if you want to skip, not recommended
-  aspectRatio: 4/3//4/3, or 3/2
+  aspectRatio: 4/3,
 }
 
 var slideSettings = {
