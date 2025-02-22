@@ -204,7 +204,7 @@ function slideKickOff() {
                 $('#travel-content .lows').fadeIn(0)
 				
 				$('#travel-container #travel-content .cities').text("\n\nCity")
-				$('#travel-container #travel-content .weathers').text("\n\nWeather")
+				$('#travel-container #travel-content .weathers').text("\n\n               Weather")
 				$('#travel-container #travel-content .his').text("\n\nHi")
 				$('#travel-container #travel-content .lows').text("\n\nLow")
 
@@ -212,11 +212,11 @@ function slideKickOff() {
 					let prevTextCity = $('#travel-container #travel-content .cities').text()
 					$('#travel-container #travel-content .cities').text(prevTextCity += "\n" + weatherData.travel.cities[i].displayname)
 					let prevTextWeathers = $('#travel-container #travel-content .weathers').text()
-					$('#travel-container #travel-content .weathers').text(prevTextWeathers += "\n" + condReplace(weatherData.travel.cities[i].days[0].condition))
+					$('#travel-container #travel-content .weathers').text(prevTextWeathers += "\n               " + condReplace(weatherData.travel.cities[i].days[0].condition))
 					let prevTextHigh = $('#travel-container #travel-content .his').text()
 					$('#travel-container #travel-content .his').text(prevTextHigh += "\n" + weatherData.travel.cities[i].days[0].high)
 					let prevTextLow = $('#travel-container #travel-content .lows').text()
-					$('#travel-container #travel-content .lows').text(prevTextLow += "\n" + weatherData.travel.cities[i].days[0].low)
+					$('#travel-container #travel-content .lows').text(prevTextLow += "    \n" + weatherData.travel.cities[i].days[0].low)
 				}
             
                 $('#travel-container #travel-title-container').marquee({speed: 110, direction: 'up', pauseOnHover: false});
