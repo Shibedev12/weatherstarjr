@@ -22,7 +22,7 @@
     left: 50%;
     overflow: hidden;
     transform: translate(-50%, -50%);
-    width: 1620px;
+    width: 1440px;
     height: 1080px;
     will-change: transform;
 }
@@ -35,6 +35,9 @@
 a, body, div, h1, html, p {
     margin: 0;
     padding: 0;
+    text-shadow: 6px 6px #000;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 6px #000;
 }
 html * {
     box-sizing: border-box;
@@ -55,23 +58,13 @@ body, html {
 #startup-text {
     font-family: 'mainfont';
     font-size: 76px;
-    letter-spacing: 4px;
-    text-shadow:
-    2.5px 2.5px 0 #000,
-    -2.5px 2.5px 0 #000,
-    -2.5px -2.5px 0 #000,
-    2.5px -2.5px 0 #000;
+    letter-spacing: -2px;
     text-align: center;
     white-space: pre-wrap;
 }
 #startup-credits {
     font-family: 'smallfont';
     font-size: 65.1px;
-    text-shadow:
-    2.5px 2.5px 0 #000,
-    -2.5px 2.5px 0 #000,
-    -2.5px -2.5px 0 #000,
-    2.5px -2.5px 0 #000;
     text-align: center;
     margin-top: 20px;
     line-height: 55px;
@@ -79,22 +72,10 @@ body, html {
 #startup-copyright {
     font-family: 'mainfont';
     font-size: 76px;
-    letter-spacing: 4px;
+    letter-spacing: -2px;
     line-height: 90px;
-    text-shadow:
-    2.5px 2.5px 0 #000,
-    -2.5px 2.5px 0 #000,
-    -2.5px -2.5px 0 #000,
-    2.5px -2.5px 0 #000;
     text-align: center;
     white-space: pre-wrap;
-}
-.header {
-    text-shadow:
-    2.5px 2.5px 0 #000,
-    -2.5px 2.5px 0 #000,
-    -2.5px -2.5px 0 #000,
-    2.5px -2.5px 0 #000;
 }
 #template {
     position: absolute;
@@ -105,12 +86,12 @@ body, html {
 }
 #title-container {
     position:absolute;
-    margin-top: 5.5%;
+    margin-top: 4.5%;
     margin-left: 165.275px;
     width: 80%;
     height: 90px;
     font-size: 76px;
-    letter-spacing: 4px;
+    letter-spacing: -2px;
     line-height: 90px;
 }
 #slide-title-text {
@@ -118,11 +99,6 @@ body, html {
     font-family: 'mainfont';
     font-size: 76px;
     width: 100%;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
     white-space: pre-wrap;
 }
 #bulletin-background {
@@ -137,11 +113,11 @@ body, html {
     overflow: hidden;
     margin-left: 165.275px;
     margin-top: 6%;
-    width: 1288px;
-    height: 764px;
+    width: 1087px;
+    height: 775px;
     z-index: 25005;
     font-size: 76px;
-    letter-spacing: 4px;
+    letter-spacing: -2px;
     line-height: 90px;
 }
 #bulletin-container #bulletin {
@@ -149,19 +125,14 @@ body, html {
     position: absolute;
     overflow: hidden;
     width: 100%;
-    height: 769px;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
+    height: 775px;
     white-space: pre-wrap;
     z-index: 25006
 }
 #travel-background {
     position: absolute;
     width: 100%;
-    height: 855px;
+    height: 850px;
     background-color: #555652;
     z-index: 15000;
 }
@@ -171,42 +142,32 @@ body, html {
     overflow: hidden;
     margin-left: 165.275px;
     margin-top: 6%;
-    width: 1287.12px;
-    height: 758px;
+    width: 1097px;
+    height: 764px;
     z-index: 15001;
 }
 #travel-container #travel-title-container {
     position:absolute;
     width: 100%;
     height: 759px;
-    font-size: 102px;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
+    letter-spacing: -2px;
+    text-align: left;
+    font-size: 98px;
 }
 #travel-title-text {
-    font-size: 121px;
     line-height: 108px;
-    letter-spacing: -4px;
     white-space: pre;
 }
 #travel-container #travel-content {
     position: absolute;
     font-family: 'largefont';
     font-size: 76px;
-    width: 100%;
+    width: 1097px;
     height: 759px;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 #travel-container #travel-content * {
     line-height: 135px;
-    letter-spacing: 4.25px;
+    letter-spacing: -2px;
 }
 #travel-container #travel-content .cities {
     position: absolute;
@@ -216,7 +177,6 @@ body, html {
 }
 #travel-container #travel-content .weathers {
     position: absolute;
-    margin-left: 606px;
     width: 100%;
     height: 100%;
     white-space: pre-wrap;
@@ -226,6 +186,7 @@ body, html {
     width: 100%;
     height: 100%;
     text-align: right;
+    transform: translate(-10p, 0pxx);
     white-space: pre-wrap;
 }
 #travel-container #travel-content .lows {
@@ -234,16 +195,15 @@ body, html {
     width: 100%;
     height: 100%;
     white-space: pre-wrap;
-    transform: translate(-158px, 0px);
 }
 #slides {
     position:absolute;
     margin-left: 165.275px;
-    margin-top: 11%;
-    width: 1287.12px;
+    margin-top: 11.5%;
+    width: 1087px;
     height: 675px;
     font-size: 76px;
-    letter-spacing: 4px;
+    letter-spacing: -2px;
     line-height: 90px;
 }
 .info-cc {
@@ -251,11 +211,6 @@ body, html {
     font-family: 'mainfont';
     font-size: 76px;
     line-height: 90px;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
     width: 100%;
     height: 100%;
 }
@@ -362,22 +317,12 @@ body, html {
     position:absolute;
     font-family: 'smallfont';
     line-height: 60px;
-    text-shadow:
-    2.5px 2.5px 0 #000,
-    -2.5px 2.5px 0 #000,
-    -2.5px -2.5px 0 #000,
-    2.5px -2.5px 0 #000;
-    white-space: pre-wrap;
+    white-space: pre;
 }
 .hourly-observations .cities{
     position: absolute;
     font-family: 'mainfont';
     margin-top: 45px;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .hourly-observations .cities * {
     white-space: pre-wrap;
@@ -388,11 +333,6 @@ body, html {
     right: 0px;
     text-align: right;
     margin-top: 45px;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .hourly-observations .temps * {
     white-space: pre-wrap;
@@ -402,11 +342,6 @@ body, html {
     font-family: 'mainfont';
     text-align: left;
     margin-top: 45px;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .hourly-observations .weathers * {
     white-space: pre-wrap;
@@ -417,11 +352,6 @@ body, html {
     margin-top: 45px;
     width: 100%;
     text-align: right;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .hourly-observations .winds * {
     white-space: pre-wrap;
@@ -429,22 +359,17 @@ body, html {
 .daypart-forecast {
     position: absolute;
     width: 100%;
-    height: 96%;
+    height: 100%;
 }
 .daypart-forecast .forecast-1-bulletin {
-    transform: translate(0px, -45px);
-    height: 720px;
+    transform: translate(0px, -30px);
+    height: 705px;
     overflow: hidden;
 }
 .daypart-forecast .forecast-1-bulletin .border1 {
     position: absolute;
     width: 100%;
     font-family: 'mainfont';
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
     white-space: pre-wrap;
 }
 .daypart-forecast .forecast-1-bulletin .border2 {
@@ -452,49 +377,29 @@ body, html {
     width: 100%;
     font-family: 'mainfont';
     text-align: right;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
     white-space: pre-wrap;
 }
 .daypart-forecast .forecast-1-bulletin .daypartalert {
     position: relative;
     white-space: pre-wrap;
     margin-left: 37.0975px;
-    width: 1187.12px;
+    width: 1011px;
     font-family: 'mainfont';
     text-align: center;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .daypart-forecast .forecast-1-bulletin .forecast1 {
     position: relative;
     white-space: pre-wrap;
     width: 100%;
     font-family: 'mainfont';
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .daypart-forecast .forecast-1 {
     position: absolute;
     width: 100%;
     height: 100%;
-    margin-top: 45px;
+    padding-top: 65px;
     font-family: 'mainfont';
     white-space: pre-wrap;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
     overflow: hidden;
 }
 .extended-forecast {
@@ -512,33 +417,18 @@ body, html {
     position: absolute;
     height: 90px;
     font-family: 'mainfont';
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
     white-space: pre-wrap;
 }
 .extended-forecast .day-2 {
     position: absolute;
     height: 90px;
     font-family: 'mainfont';
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
     white-space: pre-wrap;
 }
 .extended-forecast .day-3 {
     position: absolute;
     height: 90px;
     font-family: 'mainfont';
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
     white-space: pre;
 }
 .extended-forecast .extended-conditions {
@@ -551,38 +441,23 @@ body, html {
     position: absolute;
     height: 90px;
     padding-left: 37.0975px;
-    width: 482.2675px;
+    width: 408.0725px;
     font-family: 'mainfont';
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
     white-space: pre-wrap;
 }
 .extended-forecast .extended-conditions .con-2 {
     position: absolute;
     height: 90px;
-    margin-left: 482.2675px;
-    width: 445.17px;
+    margin-left: 408.0725px;
+    width: 370.975px;
     font-family: 'mainfont';
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .extended-forecast .extended-conditions .con-3 {
     position: absolute;
-    width: 370.975px;
+    width: 333.8775px;
     height: 90px;
     font-family: 'mainfont';
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
-    margin-left: 927.4375px;
+    margin-left: 779.0475px;
 }
 .extended-forecast .extended-los {
     position: absolute;
@@ -596,11 +471,6 @@ body, html {
     right: 0px;
     font-family: 'mainfont';
     white-space: pre-wrap;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .extended-forecast .extended-los .lo-text-2 {
     position: absolute;
@@ -608,55 +478,30 @@ body, html {
     right: 0px;
     font-family: 'mainfont';
     white-space: pre-wrap;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .extended-forecast .extended-los .lo-text-3{
     position: absolute;
     right: 0px;
     font-family: 'mainfont';
     white-space: pre-wrap;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .extended-forecast .extended-los .lo-1 {
     position: absolute;
     height: 90px;
     font-family: 'mainfont';
     white-space: pre-wrap;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .extended-forecast .extended-los .lo-2 {
     position: absolute;
     height: 90px;
     font-family: 'mainfont';
     white-space: pre-wrap;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .extended-forecast .extended-los .lo-3{
     position: absolute;
     height: 90px;
     font-family: 'mainfont';
     white-space: pre-wrap;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .extended-forecast .extended-his {
     position: absolute;
@@ -670,11 +515,6 @@ body, html {
     right: 0px;
     font-family: 'mainfont';
     white-space: pre-wrap;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .extended-forecast .extended-his .hi-text-2 {
     position: absolute;
@@ -682,66 +522,36 @@ body, html {
     right: 0px;
     font-family: 'mainfont';
     white-space: pre-wrap;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .extended-forecast .extended-his .hi-text-3{
     position: absolute;
     right: 0px;
     font-family: 'mainfont';
     white-space: pre-wrap;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .extended-forecast .extended-his .hi-1 {
     position: absolute;
     height: 90px;
     font-family: 'mainfont';
     white-space: pre-wrap;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .extended-forecast .extended-his .hi-2 {
     position: absolute;
     height: 90px;
     font-family: 'mainfont';
     white-space: pre-wrap;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .extended-forecast .extended-his .hi-3{
     position: absolute;
     height: 90px;
     font-family: 'mainfont';
     white-space: pre-wrap;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .almanac {
     position: absolute;
     width: 100%;
     height: 100%;
     font-family: 'mainfont';
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
     margin-top: 40px;
 }
 .almanac .header {
@@ -840,11 +650,6 @@ body, html {
     position:absolute;
     font-family: 'smallfont';
     line-height: 60px;
-    text-shadow:
-    2.5px 2.5px 0 #000,
-    -2.5px 2.5px 0 #000,
-    -2.5px -2.5px 0 #000,
-    2.5px -2.5px 0 #000;
 }
 
 .regional-forecast .cities{
@@ -854,11 +659,6 @@ body, html {
     text-align: left;
     margin-top: 45px;
     line-height: 90px;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .regional-forecast .weathers{
     position: absolute;
@@ -866,11 +666,6 @@ body, html {
     width: 100%;
     text-align: left;
     margin-top: 45px;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .regional-forecast .weathers * {
     white-space: pre-wrap;
@@ -880,11 +675,6 @@ body, html {
     font-family: 'mainfont';
     right: 0px;
     margin-top: 45px;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .regional-forecast .lows * {
     white-space: pre-wrap;
@@ -895,11 +685,6 @@ body, html {
     margin-top: 45px;
     right: 0px;
     text-align: right;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .regional-forecast .highs * {
     white-space: pre-wrap;
@@ -913,32 +698,17 @@ body, html {
     position:absolute;
     font-family: 'smallfont';
     line-height: 60px;
-    text-shadow:
-    2.5px 2.5px 0 #000,
-    -2.5px 2.5px 0 #000,
-    -2.5px -2.5px 0 #000,
-    2.5px -2.5px 0 #000;
-    white-space: pre-wrap;
+    white-space: pre;
 }
 .regional-conditions .cities{
     position: absolute;
     font-family: 'mainfont';
     margin-top: 45px;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .regional-conditions .weathers{
     position: absolute;
     font-family: 'mainfont';
     margin-top: 45px;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .regional-conditions .weathers * {
     white-space: pre-wrap;
@@ -949,21 +719,11 @@ body, html {
     margin-top: 45px;
     width: 100%;
     text-align: right;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .outlook {
     position: absolute;
     width: 100%;
     height: 620px;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
     margin-top: 45px;
     overflow: hidden;
 }
@@ -986,16 +746,16 @@ body, html {
     height: 6px;
     width: 100%;
     background-color: #FFF;
-    margin-top: 52.7%;
+    margin-top: 59%;
     z-index: 1800;
 }
 #lowerbar {
-    width: 1287.12px;
+    width: 1087px;
     height: 250px;
     margin-left: 165.275px;
     margin-top: 858px;
     font-size: 76px;
-    letter-spacing: 4px;
+    letter-spacing: -2px;
     line-height: 90px;
 }
 #date-time {
@@ -1003,11 +763,6 @@ body, html {
     font-family: 'smallfont';
     line-height: 60px;
     width: 100%;
-    text-shadow:
-    2.5px 2.5px 0 #000,
-    -2.5px 2.5px 0 #000,
-    -2.5px -2.5px 0 #000,
-    2.5px -2.5px 0 #000;
 }
 #date {
     position: absolute;
@@ -1024,11 +779,6 @@ body, html {
     text-align: left;
     white-space: pre;
     margin-top: 45px;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 #marqueeholder {
     position: absolute;
@@ -1038,21 +788,11 @@ body, html {
     height: 100%;
     line-height: 80px;
     font-family: 'mainfont';
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
     transform: translate(-165.275px, 0px);
 }
 #marqueetext {
     white-space: pre-wrap;
     font-family: 'mainfont';
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
 }
 .in-progress {
     position: absolute;
@@ -1062,9 +802,11 @@ body, html {
 .in-progress .text {
     font-family: 'mainfont';
     text-align: center;
-    text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
+}
+.lowerbar-bg {
+    position: absolute;
+    z-index: -10;
+    margin-top: 59%;
+    width: 100%;
+    height: 226px;
 }
