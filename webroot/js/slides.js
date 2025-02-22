@@ -218,6 +218,8 @@ function slideKickOff() {
 					let prevTextLow = $('#travel-container #travel-content .lows').text()
 					$('#travel-container #travel-content .lows').text(prevTextLow += "    \n" + weatherData.travel.cities[i].days[0].low)
 				}
+		    let prevTextLow = $('#travel-container #travel-content .lows').text()
+                $('#travel-container #travel-content .lows').text(prevTextLow += "    ")
             
                 $('#travel-container #travel-title-container').marquee({speed: 110, direction: 'up', pauseOnHover: false});
                 $('#travel-container #travel-title-container').on('finished', function() {$('#travel-container #travel-title-container').marquee('destroy'), $('#travel-container #travel-title-container').fadeOut(0)});
