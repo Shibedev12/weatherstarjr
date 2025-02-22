@@ -87,7 +87,7 @@ function crawlKickOff() {
                 $('#lowerinfotext').fadeIn(0)
                 $('#date-time').fadeIn(0)
                 $('#marqueeholder').fadeOut(0)
-                $('#lowerinfotext').text('Humidity: ' + weatherData.currentConditions.humidity + '%   ' + 'Dewpoint: ' + weatherData.currentConditions.dewpoint + '°F')
+                $('#lowerinfotext').text('Humidity:  ' + weatherData.currentConditions.humidity + '%  ' + 'Dewpoint: ' + weatherData.currentConditions.dewpoint + '°F')
                 setTimeout(function() {
                     crawlCallBack()
                 }, lowerDetailLength);
