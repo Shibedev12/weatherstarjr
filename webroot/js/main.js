@@ -6,9 +6,6 @@ $(function(){
 	    mainAspect = apperanceSettings.aspectRatio,
 	    resizeTimer;
 
-		if (apperanceSettings.aspectRatio == 4/3) {
-			$('body').css("transform", "scale(88.88%, 100%)")
-		}
 //calls rescale when window resizes
 	$(window).resize( function(e) {
 		clearTimeout(resizeTimer);
