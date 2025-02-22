@@ -1,4 +1,7 @@
 Make sure to report any bugs or issues in the Issues tab
+= February 22, 2025 =
+ -  Fixed travel forecast bug
+FILES TO GET/CHANGE: /js/slides.js
 = February 21, 2025 =
  -  Updated font and fixed some bugs
 FIELS TO GET/CHANGE: entire webroot folder
