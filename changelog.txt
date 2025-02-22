@@ -1,4 +1,7 @@
 Make sure to report any bugs or issues in the Issues tab
+= February 21, 2025 =
+ -  Updated font and fixed some bugs
+FIELS TO GET/CHANGE: entire webroot folder
 = February 12, 2025 =
  -  Simulator released
 FIELS TO GET/CHANGE: entire webroot folder
