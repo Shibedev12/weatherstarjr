@@ -187,7 +187,7 @@ var regionalCityList = {
     {lat:"33.7501", lon:"-84.3885", cityname:"Atlanta"},
     {lat:"35.2271", lon:"-80.8431", cityname:"Charlotte"},
     {lat:"38.2009", lon:"-84.8733", cityname:"Frankfort"},
-    {lat:"35.1495", lon:"-90.0490", cityname:"Memphis>"},
+    {lat:"35.1495", lon:"-90.0490", cityname:"Memphis"},
     {lat:"29.9509", lon:"-90.0758", cityname:"New Orleans"},
     {lat:"36.8508", lon:"-76.2859", cityname:"Norfolk"},
     {lat:"27.9517", lon:"-82.4588", cityname:"Tampa"},
